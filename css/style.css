@@ -1,0 +1,194 @@
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 2;
+    
+}
+
+.header {
+    background-attachment: fixed;
+    height: 95vh;
+    background-image: linear-gradient(to bottom right,rgba(227, 229, 229, 0.582), #40353c8c),
+    url(../img/mustikavegan.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.text-box  {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: (-30%, -30%);
+    overflow: hidden;
+}
+
+.text-box h1 {
+    text-transform: uppercase;
+    color: #7c2f1e;
+    text-shadow: 0 0 3px #b3b8bc, 0 0 5px #0c72b6;
+}
+
+.heading-main {
+    display: flex;
+    font-size: 5rem;
+    letter-spacing: 1.1rem;
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.heading-sub {
+    display: flex;
+    font-size: 3rem;
+    letter-spacing: 2.1rem;
+    animation-name: moveInRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn {
+    border-bottom: 0.2rem solid #8f8487;
+    font-size: 3rem;
+    color: #e3e5e5;
+    display: inline-block;
+    margin-top: 5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #ac908260;
+    box-shadow: 0 0.5rem 1rem #40353c8d;
+    transform: translateY(-5px);
+}
+
+.btn:active {
+    box-shadow: 0 0.5rem 1rem #40353c8d;
+    transform: translateY(5px);
+}
+
+.main {
+    background-attachment: fixed;
+    height: 95vh;
+    background-color: #ac9082;
+    text-align: center;
+    margin-top: -4rem;
+    padding-top: 5rem;
+    clip-path: polygon(50% 5%, 100% 0, 100% 43%, 100% 100%, 50% 95%, 50% 95%, 0 100%, 0% 43%, 0 0);
+   
+}
+
+.main h1 {
+    color: #e3e5e5;
+    text-shadow: 0 0 3px #b3b8bc, 0 0 5px #0c72b6;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.gallery {
+    display: flex;
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.gallery_photo {
+    box-shadow: 0 1.5rem 4rem #40353c8d;
+    outline-offset: 1rem;
+    position: absolute;
+    width: 500px;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.gallery_photo:hover{
+    outline: 1.8rem solid #40353c8d;
+    transform: scale(1.1);
+    z-index: 30;
+}
+
+.gallery_photo-1 {
+    left: 5%;
+    top: 1%;
+    width: 350px;
+}
+
+.gallery_photo-2 {
+    left: 30%;
+    top: 7%;
+    width: 250px;
+}
+
+.gallery_photo-3{
+    left: 50%;
+    top: 20%;
+    width: 310px;
+}
+
+.footer {
+    background-attachment: fixed;
+    height: 40vh;
+    background-color: #8f848738;
+    color: #8f8487;
+    font-size: 1rem;
+    padding-top: -2rem;
+    text-align: center;
+    margin-top: -5rem;
+}
+
+.footer ul li {
+    display: flex;
+display: inline-block;
+margin: 5rem;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #8f8487;
+}
+
+.footer ul li:hover, .footer ul li a:hover {
+    color: #753244;
+    transform: scale(1.3);
+}
