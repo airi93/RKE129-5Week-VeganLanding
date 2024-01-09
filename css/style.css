@@ -24,7 +24,7 @@ body {
 
 .text-box  {
     position: absolute;
-    top: 30%;
+    top: 10%;
     left: 20%;
     transform: (-30%, -30%);
     overflow: hidden;
@@ -38,7 +38,7 @@ body {
 
 .heading-main {
     display: flex;
-    font-size: 5rem;
+    font-size: 3rem;
     letter-spacing: 1.1rem;
     animation-name: moveInLeft;
     animation-duration: 4s;
@@ -61,8 +61,8 @@ body {
 
 .heading-sub {
     display: flex;
-    font-size: 3rem;
-    letter-spacing: 2.1rem;
+    font-size: 2rem;
+    letter-spacing: 1rem;
     animation-name: moveInRight;
     animation-duration: 4s;
     animation-timing-function: ease-in-out;
@@ -83,12 +83,12 @@ body {
 }
 
 .btn-container {
-    text-align: center;
+    text-align: ;
 }
 
 .btn {
     border-bottom: 0.2rem solid #8f8487;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #e3e5e5;
     display: inline-block;
     margin-top: 5rem;
@@ -122,12 +122,12 @@ body {
 .main h1 {
     color: #e3e5e5;
     text-shadow: 0 0 3px #b3b8bc, 0 0 5px #0c72b6;
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 .gallery {
     display: flex;
-    width: 75%;
+    width: 70%;
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -149,26 +149,26 @@ body {
 }
 
 .gallery_photo-1 {
-    left: 5%;
+    left: 1%;
     top: 1%;
-    width: 350px;
+    width: 250px;
 }
 
 .gallery_photo-2 {
-    left: 30%;
-    top: 7%;
+    left: 20%;
+    top: 2%;
     width: 250px;
 }
 
 .gallery_photo-3{
-    left: 50%;
-    top: 20%;
-    width: 310px;
+    left: 40%;
+    top: 18%;
+    width: 250px;
 }
 
 .footer {
     background-attachment: fixed;
-    height: 40vh;
+    height: 70vh;
     background-color: #8f848738;
     color: #8f8487;
     font-size: 1rem;
@@ -191,4 +191,93 @@ margin: 5rem;
 .footer ul li:hover, .footer ul li a:hover {
     color: #753244;
     transform: scale(1.3);
+}
+
+
+
+@media (min-width:480px) {
+.smartphone {
+        display: block;
+}
+.tablet {
+  display: none;  
+}
+
+.laptop {
+    display: none;
+}
+
+.desktop {
+    display: none;
+}
+
+.container {
+    
+    width: 100%;
+}
+.heading-main {
+    color: #957864;
+}
+}
+
+@media (min-width:768px) {
+    .smartphone {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
+    .laptop {
+        display: none;
+    }
+    
+    .desktop {
+        display: none;
+    }
+    
+    .container {
+        
+        width: 100%;
+    }
+    .heading-main {
+        color: #40353c;
+    }
+}
+
+@media (min-width:1024px) {
+        .tablet {
+        display: none;
+    }
+    .laptop {
+        display: block;
+    }
+    
+    
+    .container {
+       
+        width: 100%;
+    }
+    .heading-main {
+        color: #8f8487;
+    }
+}
+
+@media (min-width:1200px) {
+    .desktop {
+    display: block;
+}
+.laptop {
+    display: none;
+}
+
+
+.container {
+    
+    width: 75%;
+}
+
+.heading-main {
+    color: #6494b4;
+}
 }
